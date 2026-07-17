@@ -1,0 +1,191 @@
+
+html { 
+     background-image: linear-gradient(180deg, rgb(27, 3, 38), rgb(3, 2, 12));
+    font-family: 'Courier New', Courier, monospace;
+    background-repeat:no-repeat;
+    height: 125%;
+    width:100%;
+    background-attachment: fixed;
+    
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(42, 6, 90); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(152, 140, 235); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(152, 140, 235); 
+}
+}
+
+
+#main { 
+    display:flex;
+    flex-direction:column;
+    background-color: rgba(0, 0, 0, 0.413);
+    align-items: center;
+    color:rgb(130, 113, 196);
+    margin-left:10%;
+     margin-right:10%;
+     border-style:solid;
+     border-color:rgb(42, 6, 90);
+     
+    
+}
+#content{ 
+    padding:15px;
+}
+
+
+
+#buttons {
+   
+    display: flex;
+    direction:row;
+    width:100%;
+    
+}
+#socials {
+    display: flex;
+    direction:row; 
+     width:100%;
+}
+#webrings {
+    display: flex;
+   flex-direction: column;
+     width:100%;
+}
+#header { 
+    width:100%
+}
+button { 
+    font-family: 'Courier New', Courier, monospace;
+    height:25px;
+    width:100px;
+    flex-grow: 1;
+    color:rgb(152, 140, 235);
+    border-style: hidden;
+    background-image: linear-gradient(180deg, rgb(42, 6, 90), rgb(16, 20, 60));
+}
+button:hover{ 
+    color:rgb(111, 99, 183);
+        background-image: linear-gradient(180deg, rgb(29, 4, 61), rgb(10, 12, 43));
+}
+#webby { 
+    max-height: 350;
+
+}
+.neck { 
+    
+    width:65%;
+    padding:15px;
+    
+    border-radius: 30px;
+}
+.sidebyside {
+    display:flex;
+    flex-direction:row;
+
+
+}
+#texty { 
+    width:75%;
+    padding:15px;
+    margin-right:15px;
+    background-color:rgba(105, 91, 186, 0.194);
+    border-radius:15px;
+    height:100%;
+}
+#toord { 
+     background-color:rgba(105, 91, 186, 0.194);
+    border-radius:15px;
+    padding:15px;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+#jewelry {
+    text-align:center; 
+}
+#Art { 
+    text-align: center;
+}
+.neck2 { 
+    
+    width:50%;
+    padding:1px;
+    
+    border-radius: 30px;
+}
+.sidebyside2 {
+    display:flex;
+    flex-direction:row;
+
+
+}
+#texty2 { 
+    width:100%;
+    padding:15px;
+    margin-right:15px;
+    background-color:rgba(105, 91, 186, 0.194);
+    border-radis:15px;
+    height:350px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+#toord2 { 
+     background-color:rgba(105, 91, 186, 0.194);
+    border-radius:15px;
+    padding:15px;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+
+
+@media (max-width: 900px) {
+    .GALLERY {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
+    }
+    
+
+    button {
+        height: 40px; 
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .GALLERY {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    
+    #main {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%; 
+    
+    
+    #buttons, .tab {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    
+    button {
+        min-width: 45%; 
+        flex-grow: 1; 
+    }
+}

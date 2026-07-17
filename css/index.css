@@ -1,0 +1,88 @@
+html { 
+     background-image: linear-gradient(180deg, rgb(27, 3, 38), rgb(3, 2, 12));
+    font-family: 'Courier New', Courier, monospace;
+    background-repeat:no-repeat;
+    height:100%;
+    width:100%;
+       background-attachment: fixed;
+}
+#main { 
+    display:flex;
+    flex-direction:column;
+    background-color: rgba(0, 0, 0, 0.413);
+    align-items: center;
+    color:rgb(130, 113, 196);
+    margin-left:10%;
+     margin-right:10%;
+     border-style:solid;
+     border-color:rgb(42, 6, 90);
+     
+    
+}
+#content{ 
+    padding:15px;
+}
+#buttons {
+   
+    display: flex;
+    direction:row;
+    width:100%;
+    
+}
+#socials {
+    display: flex;
+    direction:row; 
+     width:100%;
+}
+#webrings {
+    display: flex;
+   flex-direction: column;
+     width:100%;
+}
+#header { 
+    width:100%
+}
+button { 
+    font-family: 'Courier New', Courier, monospace;
+    height:25px;
+    width:100px;
+    flex-grow: 1;
+    color:rgb(152, 140, 235);
+    border-style: hidden;
+    background-image: linear-gradient(180deg, rgb(42, 6, 90), rgb(16, 20, 60));
+}
+button:hover{ 
+    color:rgb(111, 99, 183);
+        background-image: linear-gradient(180deg, rgb(29, 4, 61), rgb(10, 12, 43));
+}
+#webby { 
+    max-height: 350;
+
+}
+#rowwy {
+    display:flex;
+    flex-direction:row;
+    height:150PX;
+    overflow-x:hidden 
+    
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 2px 4px;
+
+  resize: horizontal;
+  container-type: inline-size;
+}
+.marquee > * {
+  animation: marquee 5s linear infinite both alternate;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(min(100cqw - 100%, 0px));
+  }
+}
